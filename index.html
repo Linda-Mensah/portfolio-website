@@ -3,13 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Questrial&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Questrial&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -21,11 +24,11 @@
   </head>
   <body>
     <header>
-      <h1 class="header-name">LindaMensah</h1>
+      <h1 class="header-name">git init my-career</h1>
     </header>
     <section class="banner-section">
       <div class="banner">
-        <!-- Replace div with banner -->
+        <img src="./assets/banner-workspace.jpg" alt="my banner" />
       </div>
     </section>
     <nav>
@@ -37,10 +40,24 @@
         <li>Experience</li>
         <li>Contact</li>
       </ul>
+      <div>
+        <a href="https://github.com/Linda-Mensah" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/lindamensah/" target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="mailto:lindaakmensah@gmail.com">
+          <i class="fa-solid fa-square-envelope"></i
+        ></a>
+        <a href="https://www.instagram.com/linsah_/" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
     </nav>
     <section class="about-me">
       <div class="left-section">
-        <h1 class="about-me-title">Hi there! I'm Linda Mensah</h1>
+        <h1>Hi, I'm a frontend developer & a project</h1>
         <ul class="about-me-subtitle">
           <li>Developer</li>
           <li>Project Manager</li>
@@ -48,26 +65,143 @@
           <li>Tech Enthusiast</li>
         </ul>
         <p>
+          <span><strong>A quick intro...</strong></span> <br />
+          <br />
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit expedita
-          modi ducimus alias illum nulla sapiente. Cumque quibusdam neque
-          temporibus eveniet quidem labore iusto fugiat!
+          modi ducimus alias illum nulla sapiente.<br /><br />
+          Cumque quibusdam neque temporibus eveniet quidem labore iusto fugiat!
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br />
+          <br />
+          <a href=""><button class="resume-button">See Resume</button></a>
         </p>
-        <button>check Out My Resume</button>
       </div>
       <div class="right-section">
-        <img src="./assets/placeholder-photo.jpg" alt="linda mensah photo" />
-        <div class="right-section-icons">
-          <a href="https://github.com/Linda-Mensah">
-            <i class="fa-brands fa-github"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/lindamensah/"
-            ><i class="fa-brands fa-linkedin"></i
-          ></a>
-          <a href="mailto:lindaakmensah@gmail.com">
-            <i class="fa-solid fa-square-envelope"></i
-          ></a>
-        </div>
+        <img src="./assets/portrait-cropped.jpg" alt="linda mensah photo" />
       </div>
     </section>
+
+    <!--Turn to flex: column -->
+    <section class="skills">
+      <!-- Turn to flex: row -->
+      <div class="skills-container-1">
+        <h1>FRONTEND</h1>
+        <div class="frontend">
+          <div>
+            <i class="fa-brands fa-html5"></i>
+            <p>HTML</p>
+          </div>
+          <div>
+            <i class="fa-brands fa-css3-alt"></i>
+            <p>CSS</p>
+          </div>
+          <div>
+            <i class="fa-brands fa-js"></i>
+            <p>Javascript</p>
+          </div>
+          <div>
+            <i class="fa-brands fa-react"></i>
+            <p>React</p>
+          </div>
+          <div>
+            <i class="fa-brands fa-git"></i>
+            <p>Git</p>
+          </div>
+          <div>
+            <i class="fa-brands fa-bootstrap"></i>
+            <p>Bootstrap</p>
+          </div>
+        </div>
+        <h1>PROJECT MANAGEMENT</h1>
+        <div class="project-management">
+          <div>
+            <i class="fa-brands fa-jira"></i>
+            <p>Jira</p>
+          </div>
+          <div>
+            <i class="fa-brands fa-confluence"></i>
+            <p>Confluence</p>
+          </div>
+          <div>
+            <i class="fa-brands fa-trello"></i>
+            <p>Trello</p>
+          </div>
+          <div>
+            <i class="fa-brands fa-slack"></i>
+            <p>Slack</p>
+          </div>
+        </div>
+      </div>
+      <div class="skills-container-2">
+        <span>Communication</span>
+        <span>Team Work & Collaboration</span>
+        <span>Adaptability</span>
+        <span>Time Management</span>
+      </div>
+    </section>
+
+    <!-- Project Slider Container -->
+    <div class="project-slider">
+      <!-- Slider Track (All Project Cards go here) -->
+      <div class="project-track">
+        <!--Project Card 1 -->
+        <div class="project-card">
+          <!--Replace the image URL below with second screenshot -->
+          <img src="assets/tbc-thumbnail.png" alt="Landing Page Thumbnail" />
+
+          <!--Replace with project title -->
+          <h3>Landing Page</h3>
+
+          <div class="project-links">
+            <!--Replace GitHub repo URL -->
+            <a href="https://github.com/yourname/landing-page" target="_blank"
+              >GitHub</a
+            >
+            <!--Replace live website URL -->
+            <a href="https://yourlandingpage.netlify.app" target="_blank"
+              >Live</a
+            >
+          </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="project-card">
+          <img src="assets/tbc-thumbnail.png" alt="Portfolio Site Thumbnail" />
+          <h3>Portfolio Site</h3>
+          <div class="project-links">
+            <a href="https://github.com/yourname/portfolio-site" target="_blank"
+              >GitHub</a
+            >
+            <a href="https://yourportfolio.netlify.app" target="_blank">Live</a>
+          </div>
+        </div>
+
+        <!--Add more projects as needed -->
+      </div>
+
+      <!-- Navigation Buttons -->
+      <button class="slider-btn prev">←</button>
+      <button class="slider-btn next">→</button>
+    </div>
+    <script>
+      const track = document.querySelector(".project-track");
+      const slides = document.querySelectorAll(".project-card");
+      const prevBtn = document.querySelector(".prev");
+      const nextBtn = document.querySelector(".next");
+      let index = 0;
+
+      function updateSlider() {
+        track.style.transform = `translateX(-${index * 100}%)`;
+      }
+
+      nextBtn.addEventListener("click", () => {
+        index = (index + 1) % slides.length;
+        updateSlider();
+      });
+
+      prevBtn.addEventListener("click", () => {
+        index = (index - 1 + slides.length) % slides.length;
+        updateSlider();
+      });
+    </script>
   </body>
 </html>
