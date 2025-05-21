@@ -6,8 +6,9 @@ body {
 }
 
 header {
+  text-align: center;
+  padding: 10px 0;
   background-color: black;
-  color: white;
   width: 100%;
   position: fixed;
   top: 0;
@@ -15,18 +16,20 @@ header {
   z-index: 1;
 }
 
-header h1 {
-  font-size: 1rem;
-  padding: 15px;
-  text-align: center;
-  font-family: "Courier New", Courier, monospace;
+header img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  background-color: white;
+  border-radius: 100%;
 }
 
 .banner {
   width: 100%;
-  height: 200px;
+  height: 300px;
   overflow: hidden;
   position: relative;
+  opacity: 80%;
 }
 
 .banner img {
@@ -39,10 +42,11 @@ nav {
   display: flex;
   justify-content: space-between;
   position: sticky;
-  top: 68px;
-  padding: 12px;
-  background-color: #f8f8f8;
+  top: 58px;
+  padding: 12px 50px;
+  background-color: rgb(240, 235, 233);
   margin-bottom: 2rem;
+  z-index: 11;
 }
 
 nav ul {
@@ -50,20 +54,26 @@ nav ul {
   gap: 50px;
   justify-content: center;
   list-style-type: none;
+  font-weight: bold;
+  font-size: 14px;
 }
 
 nav div {
   display: flex;
   gap: 50px;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   justify-content: center;
   align-items: center;
 }
 
 nav div a i {
-  background-color: rgb(230, 227, 227);
+  background-color: rgb(226, 218, 218);
   border-radius: 100%;
   padding: 10px;
+}
+
+nav div a i:hover {
+  color: darkorange;
 }
 
 nav div a:hover {
@@ -120,7 +130,7 @@ nav ul .home {
   max-width: 80%;
 }
 
-.about.me .left-section h1 {
+.left-section h1 {
   font-size: 2rem;
   font-weight: 300;
   white-space: nowrap;
@@ -144,11 +154,15 @@ nav ul .home {
 }
 
 .left-section p {
-  padding: 35px;
+  padding: 60px;
   margin: 30px 0;
   border: 1px solid white;
   line-height: 20px;
-  box-shadow: 0 5px 20px rgba(0, 1, 0.5, 0.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.left-section p span {
+  font-size: 2rem;
 }
 .resume-button {
   padding: 12px;
@@ -180,6 +194,7 @@ nav ul .home {
   width: 80%;
   height: 80%;
   object-fit: contain;
+  border-radius: 30%;
 }
 
 .right-section-icons a i {
@@ -187,21 +202,51 @@ nav ul .home {
   color: black;
 }
 
-.skills {
-  display: flex;
-  flex-direction: column;
-}
-
 .skills-container-1 {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
 }
 
 .frontend,
 .project-management {
   display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.frontend-skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  text-align: center;
+}
+
+.project-management-skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  text-align: center;
+}
+
+.frontend-skills div,
+.project-management-skills div {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.frontend-skills div:hover,
+.project-management-skills div:hover {
+  cursor: pointer;
+  background-color: rgb(214, 209, 209);
+  border: 1px solid black;
+  color: black;
 }
 
 /* .skills-container-1 .frontend div,
@@ -211,17 +256,6 @@ nav ul .home {
   background-color: #f4f4f4;
 
 } */
-
-.frontend div,
-.project-management div {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  column-gap: 20px;
-  background-color: #f4f4f4;
-}
 
 .project-slider {
   position: relative;
@@ -259,7 +293,7 @@ nav ul .home {
 .project-links a {
   margin: 0 10px;
   padding: 8px 16px;
-  background-color: orangered;
+  background-color: green;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -291,4 +325,30 @@ nav ul .home {
 
 .next {
   right: 10px;
+}
+.experience-section {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 20px 60px;
+}
+
+.experience-container {
+  display: flex;
+}
+
+.experience-inner-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom-section {
+  display: flex;
+}
+.experience-banner {
+  height: 250px;
+  background-color: black;
+  margin: 30px;
+  color: white;
+  font-size: 2rem;
 }

@@ -24,11 +24,11 @@
   </head>
   <body>
     <header>
-      <h1 class="header-name">git init my-career</h1>
+      <img src="./assets/logo-LM.png" alt="linda mensah logo" />
     </header>
     <section class="banner-section">
       <div class="banner">
-        <img src="./assets/banner-workspace.jpg" alt="my banner" />
+        <img src="./assets/brown-desk.jpg" alt="my banner" />
       </div>
     </section>
     <nav>
@@ -57,13 +57,13 @@
     </nav>
     <section class="about-me">
       <div class="left-section">
-        <h1>Hi, I'm a frontend developer & a project</h1>
-        <ul class="about-me-subtitle">
+        <h1>Frontend Developer & Project Manager</h1>
+        <!-- <ul class="about-me-subtitle">
           <li>Developer</li>
           <li>Project Manager</li>
           <li>Problem Solver</li>
           <li>Tech Enthusiast</li>
-        </ul>
+        </ul> -->
         <p>
           <span><strong>A quick intro...</strong></span> <br />
           <br />
@@ -76,16 +76,14 @@
         </p>
       </div>
       <div class="right-section">
-        <img src="./assets/portrait-cropped.jpg" alt="linda mensah photo" />
+        <img src="./assets/portrait-colored.jpg" alt="linda mensah photo" />
       </div>
     </section>
 
-    <!--Turn to flex: column -->
-    <section class="skills">
-      <!-- Turn to flex: row -->
-      <div class="skills-container-1">
+    <section class="skills-container-1">
+      <div class="frontend">
         <h1>FRONTEND</h1>
-        <div class="frontend">
+        <div class="frontend-skills">
           <div>
             <i class="fa-brands fa-html5"></i>
             <p>HTML</p>
@@ -111,8 +109,11 @@
             <p>Bootstrap</p>
           </div>
         </div>
+      </div>
+
+      <div class="project-management">
         <h1>PROJECT MANAGEMENT</h1>
-        <div class="project-management">
+        <div class="project-management-skills">
           <div>
             <i class="fa-brands fa-jira"></i>
             <p>Jira</p>
@@ -131,26 +132,66 @@
           </div>
         </div>
       </div>
-      <div class="skills-container-2">
-        <span>Communication</span>
-        <span>Team Work & Collaboration</span>
-        <span>Adaptability</span>
-        <span>Time Management</span>
-      </div>
     </section>
 
+    <section class="experience-section">
+      <!-- flex: column -->
+
+      <div class="experience-banner">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nesciunt
+        facere quasi fuga voluptate quam minima impedit doloribus est
+        distinctio.
+        </p>
+      </div>
+
+      <div class="experience-container">
+        <h1 class="experience-title">
+          Lorem ipsum <br />
+          dolor sit amet.
+        </h1>
+
+        <div class="experience-inner-container">
+          <div class="top-section">
+            <i class="fa-solid fa-code"></i>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas
+              <br />
+              iure magnam vel modi ea illo veritatis. Labore sequi inventore
+              nulla.
+            </p>
+          </div>
+          <div class="bottom-section">
+            <h1>Frontend development</h1>
+            <p>01</p>
+          </div>
+        </div>
+        <div class="experience-inner-container">
+          <div class="top-section">
+             <i class="fa-solid fa-user-gear"></i>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas
+              <br />
+              iure magnam vel modi ea illo veritatis. Labore sequi inventore
+              nulla.
+            </p>
+          </div>
+          <div class="bottom-section">
+            <h1>Project Management</h1>
+            <p>02</p>
+          </div>
+        </div>
+
+        
     <!-- Project Slider Container -->
     <div class="project-slider">
       <!-- Slider Track (All Project Cards go here) -->
       <div class="project-track">
         <!--Project Card 1 -->
         <div class="project-card">
-          <!--Replace the image URL below with second screenshot -->
+          <!--Replace the image URL with second screenshot -->
           <img src="assets/tbc-thumbnail.png" alt="Landing Page Thumbnail" />
-
-          <!--Replace with project title -->
+          <!--Project title -->
           <h3>Landing Page</h3>
-
           <div class="project-links">
             <!--Replace GitHub repo URL -->
             <a href="https://github.com/yourname/landing-page" target="_blank"
@@ -174,24 +215,23 @@
             <a href="https://yourportfolio.netlify.app" target="_blank">Live</a>
           </div>
         </div>
-
-        <!--Add more projects as needed -->
+        <!--Add more projects? -->
       </div>
-
       <!-- Navigation Buttons -->
       <button class="slider-btn prev">←</button>
       <button class="slider-btn next">→</button>
     </div>
+
     <script>
       const track = document.querySelector(".project-track");
       const slides = document.querySelectorAll(".project-card");
       const prevBtn = document.querySelector(".prev");
       const nextBtn = document.querySelector(".next");
       let index = 0;
-
-      function updateSlider() {
-        track.style.transform = `translateX(-${index * 100}%)`;
-      }
+      8 /
+        function updateSlider() {
+          track.style.transform = `translateX(-${index * 100}%)`;
+        };
 
       nextBtn.addEventListener("click", () => {
         index = (index + 1) % slides.length;
